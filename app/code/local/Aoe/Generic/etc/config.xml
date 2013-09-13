@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Aoe_Generic>
+            <version>0.0.1</version>
+        </Aoe_Generic>
+    </modules>
+
+    <global>
+        <helpers>
+            <aoe_generic>
+                <class>Aoe_Generic_Helper</class>
+            </aoe_generic>
+        </helpers>
+
+        <events>
+            <phpunit_suite_start_after>
+                <observers>
+                    <aoe_generic>
+                        <class>Aoe_Generic_PHPUnitTest_Observer</class>
+                        <method>replaceMageHelper</method>
+                    </aoe_generic>
+                </observers>
+            </phpunit_suite_start_after>
+        </events>
+    </global>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Aoe_Generic/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Aoe_Generic>
+            <active>true</active>
+            <!-- because of local overrides we can add here let's use local code pool -->
+            <codePool>local</codePool>
+        </Aoe_Generic>
+    </modules>
+</config>
