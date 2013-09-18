@@ -62,7 +62,7 @@ class Aoe_Generic_PHPUnitTest_Helper_Mage extends Aoe_Generic_Helper_Mage
         if ($replacedInstance) {
             return $replacedInstance;
         } else {
-            return parent::getModel($modelClass, $constructorArguments);
+            return parent::getResourceModel($modelClass, $constructorArguments);
         }
     }
 }

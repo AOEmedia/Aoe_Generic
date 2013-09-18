@@ -14,6 +14,15 @@
         </helpers>
 
         <events>
+            <controller_front_init_before>
+                <observers>
+                    <aoe_generic>
+                        <class>Aoe_Autoloader</class>
+                        <method>register</method>
+                    </aoe_generic>
+                </observers>
+            </controller_front_init_before>
+
             <phpunit_suite_start_after>
                 <observers>
                     <aoe_generic>
@@ -27,6 +36,9 @@
 
     <phpunit>
         <suite>
+            <groups>
+                <phpunit>PHPUnitTest</phpunit>
+            </groups>
             <modules>
                 <Aoe_Generic/>
             </modules>
