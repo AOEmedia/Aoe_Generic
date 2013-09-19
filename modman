@@ -1,4 +1,3 @@
 app/code/local/Aoe/Generic/                          app/code/local/Aoe/Generic/
 app/etc/modules/Aoe_Generic.xml                      app/etc/modules/Aoe_Generic.xml
 lib/Aoe/                                             lib/Aoe/
-phpunit.xml.dist                                     phpunit.xml.dist
