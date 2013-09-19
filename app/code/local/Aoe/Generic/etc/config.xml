@@ -12,13 +12,18 @@
                 <class>Aoe_Generic_Helper</class>
             </aoe_generic>
         </helpers>
+        <models>
+            <aoe_generic>
+                <class>Aoe_Generic_Model</class>
+            </aoe_generic>
+        </models>
 
         <events>
             <controller_front_init_before>
                 <observers>
                     <aoe_generic>
-                        <class>Aoe_Autoloader</class>
-                        <method>register</method>
+                        <class>aoe_generic/observer</class>
+                        <method>addNamespaceAutoloader</method>
                     </aoe_generic>
                 </observers>
             </controller_front_init_before>
