@@ -16,7 +16,7 @@ class Aoe_Generic_Model_Observer
                 $class = str_replace('\\', '_', ltrim($class, '\\'));
             }
 
-            return Varien_Autoload::instance()->autoload($class);
+            return @Varien_Autoload::instance()->autoload($class);
         }, true, true);
     }
 }
